@@ -16,10 +16,13 @@
     <string name="sign_up_button_label">Sign Up</string>
     <string name="signup_error_title">Opps~~</string>
     <string name="signup_error_msg">Please make sure all the fields are entered!!</string>
+    <string name="error_title">Opps~~</string>
     <string name="login_error_title">Opps~~</string>
     <string name="login_error_msg">Please make sure all the fields are entered!!</string>
-	<string name="meun_logout_lable">Logout</string>
-	<string name="empty_inbox_lable">No new message.</string>
-	<string name="empty_friends_lable">Add friends to begin.</string>
-    
+    <string name="meun_logout_lable">Logout</string>
+    <string name="menu_edit_friend_lable">edit friends</string>
+    <string name="empty_inbox_lable">No new message.</string>
+    <string name="empty_friends_lable">Add friends to begin.</string>
+    <string name="title_activity_edit_friends">Edit Friends</string>
+
 </resources>
