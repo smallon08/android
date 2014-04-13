@@ -21,8 +21,20 @@
     <string name="login_error_msg">Please make sure all the fields are entered!!</string>
     <string name="meun_logout_lable">Logout</string>
     <string name="menu_edit_friend_lable">edit friends</string>
+    <string name="menu_camera_lable">Camera</string>
     <string name="empty_inbox_lable">No new message.</string>
     <string name="empty_friends_lable">Add friends to begin.</string>
     <string name="title_activity_edit_friends">Edit Friends</string>
+    <string-array name="camera_choices">
+        <item >Take Picture</item>
+        <item >Take Video</item>"There was a problem accessing yr device external storage""There was a problem accessing yr device external storage""There was a problem accessing yr device external storage"
+        <item >Choose Picture</item>
+        <item >Choose Video</item>
+    </string-array>
+    <string name="error_external_storage">There was a problem accessing yr device external storage</string>
+    <string name="gernal_error">Sorry there is an error!</string>
+    <string name="video_file_size_warning">must be less than 10MB</string>
+    <string name="file_not_found_error">File is not found</string>
+    <string name="error_file_size_too_large">Select file is too large. Please choose other files</string>
 
 </resources>
