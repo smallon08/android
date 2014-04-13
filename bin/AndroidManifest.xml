@@ -10,8 +10,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:name="com.teamtreehouse.ribbit.RibbitApplication"
@@ -43,7 +46,17 @@
         <activity
             android:name="com.teamtreehouse.ribbit.EditFriendsActivity"
             android:label="@string/title_activity_edit_friends"
-            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity" android:screenOrientation="portrait">
+            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.teamtreehouse.ribbit.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.teamtreehouse.ribbit.RecipientActivity"
+            android:label="@string/title_activity_recipient"
+            android:parentActivityName="com.teamtreehouse.ribbit.MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.teamtreehouse.ribbit.MainActivity" />

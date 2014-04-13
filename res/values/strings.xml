@@ -25,16 +25,26 @@
     <string name="empty_inbox_lable">No new message.</string>
     <string name="empty_friends_lable">Add friends to begin.</string>
     <string name="title_activity_edit_friends">Edit Friends</string>
+
     <string-array name="camera_choices">
-        <item >Take Picture</item>
-        <item >Take Video</item>"There was a problem accessing yr device external storage""There was a problem accessing yr device external storage""There was a problem accessing yr device external storage"
-        <item >Choose Picture</item>
-        <item >Choose Video</item>
+        <item>Take Picture</item>
+        <item>Take Video</item>
+"There was a problem accessing yr device external storage""There was a problem accessing yr device external storage""There was a problem accessing yr device external storage"        <item>Choose Picture</item>
+        <item>Choose Video</item>
+        <item>Record</item>
     </string-array>
+
     <string name="error_external_storage">There was a problem accessing yr device external storage</string>
     <string name="gernal_error">Sorry there is an error!</string>
     <string name="video_file_size_warning">must be less than 10MB</string>
     <string name="file_not_found_error">File is not found</string>
     <string name="error_file_size_too_large">Select file is too large. Please choose other files</string>
+    <string name="title_activity_recipient">Choose Recipients</string>
+    <string name="empty_recipents_list_msg">Please add friends first</string>
+    <string name="menu_sen_label">send</string>
+    <string name="error_selecting_file">There was an error with the file select. Please try angain</string>
+    <string name="error_selecting_file_title">We are sorry!</string>
+    <string name="success_message">Message sent!</string>
+    <string name="error_sending_message">Please try again. There was an error!</string>
 
 </resources>

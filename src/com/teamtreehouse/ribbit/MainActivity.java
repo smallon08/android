@@ -81,7 +81,7 @@ public class MainActivity extends FragmentActivity implements
 						Toast.makeText(MainActivity.this, R.string.error_external_storage, Toast.LENGTH_LONG).show();
 					}else{
 						videoIntent.putExtra(MediaStore.EXTRA_OUTPUT, mMediaUri);
-						videoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT,10);
+						videoIntent.putExtra(MediaStore.EXTRA_DURATION_LIMIT,30);
 						videoIntent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY,0);
 						
 						startActivityForResult(videoIntent, TAKE_VIDEO_REQUEST);							
@@ -243,6 +243,18 @@ public class MainActivity extends FragmentActivity implements
 				MediaScanIntent.setData(mMediaUri);
 				sendBroadcast(MediaScanIntent);
 			}
+			
+			Intent recipientsIntent = new Intent(this,RecipientActivity.class);
+			recipientsIntent.setData(mMediaUri);
+			
+			String fileType;
+			if(resultCode==TAKE_PHOTO_REQUEST||resultCode==PICK_PHOTO_REQUEST){
+				fileType = ParseConstants.TYPE_IMAGE;
+			}else{
+				fileType = ParseConstants.TYPE_VIDEO;
+			}
+			recipientsIntent.putExtra(ParseConstants.KEY_FILE_TYPE, fileType);
+			startActivity(recipientsIntent);
 			
 		}else if(resultCode == RESULT_CANCELED){
 			Toast.makeText(this, R.string.gernal_error, Toast.LENGTH_LONG).show();
